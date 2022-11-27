@@ -11,7 +11,3 @@ class Dictionary:
 
     def random(self):
         return random.choice(self.data_base)
-
-
-Dic = Dictionary()
-print(Dic.random())
