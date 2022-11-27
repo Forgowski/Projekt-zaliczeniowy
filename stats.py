@@ -2,7 +2,6 @@ class Stats:
     def __init__(self):
         self.cows = 0
         self.bulls = 0
-        self.lives = 10
 
     def addCows(self):
         self.cows += 1
