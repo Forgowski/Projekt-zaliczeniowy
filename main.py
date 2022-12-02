@@ -8,7 +8,8 @@ while True:
     while True:
         answer = int(input("\n"))
         if answer == 1:
-            game = Engine()
+            lives = int(input("podaj liczbę prób z jaką chcesz zagrać (domyślnie 10): "))
+            game = Engine(lives)
             break
         elif answer == 2:
             print("Tekstowa gra, w której komputer (Host) losuje słowo, które jest izogramem (izogram jest to wyraz\n\
@@ -18,7 +19,9 @@ zwraca liczbe Cows & Bulls. Liczba przy słowie Cows oznacza literę występują
 pozycji, liczba przy słowie Bulls oznacza poprawną literę na poprawnej pozycji. Gra kończy się kiedy\n\
 liczba przy Bulls bęzie taka sama jak długość słowa wylosowanego przez komputer.")
             break
+
         elif answer == 3:
             exit(0)
+
         else:
             print("wpisz poprawną liczbe")

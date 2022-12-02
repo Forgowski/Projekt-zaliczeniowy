@@ -6,9 +6,12 @@ class Dictionary:
     len_of_chosen_word = 0
 
     def __init__(self):
-        with open("dictionary.txt", 'r', encoding="utf-8") as file:
-            holder = file.read()
-            self.data_base = holder.split(" ")
+        try:
+            with open("dictionary.txt", 'r', encoding="utf-8") as file:
+                holder = file.read()
+                self.data_base = holder.split(" ")
+        except FileNotFoundError:
+            print("nie znaleziono pliku")
 
     def random(self):
         chosen_word = random.choice(self.data_base)
