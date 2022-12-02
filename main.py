@@ -2,7 +2,7 @@ from engine import Engine
 
 
 while True:
-    print("1. Nowa gra")
+    print("\n1. Nowa gra")
     print("2. Zasady gry")
     print("3. Koniec")
     while True:
